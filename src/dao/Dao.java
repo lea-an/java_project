@@ -18,10 +18,10 @@ public class Dao {
 	private Connection yhdista(){ //yhteys tietokantaan
     	Connection con = null;    	        	
     	String JDBCAjuri = "org.mariadb.jdbc.Driver";
-    	String url = "jdbc:mariadb://localhost:15001/a1602789";        	
+    	String url = "jdbc:mariadb://localhost:15001/username";        	
     	try {
 	         Class.forName(JDBCAjuri);
-	         con = DriverManager.getConnection(url,"a1602789", "xuRYGb39r");	        
+	         con = DriverManager.getConnection(url,"username", "password");	        
 	     }catch (Exception e){	         
 	        e.printStackTrace();	         
 	     }
